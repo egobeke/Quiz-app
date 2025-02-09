@@ -117,8 +117,7 @@ function selectAnswer(button, index) {
     
     scoreElement.textContent = `Score: ${score}`;
 
-    // disable all buttons after selection
-    // Array.from(answerButtons.children).forEach(btn => btn.disabled = true);
+    
     nextButton.style.display = "block";
 
 }
@@ -136,11 +135,11 @@ nextButton.addEventListener("click", () => {
     }
 });
 
+
 backButton.id = "back-button";
 backButton.textContent = "Back";
 backButton.style.display = "none";
 quizContainer.appendChild(backButton);
-
 
 backButton.addEventListener("click", () => {
     if (currentQuestionIndex > 0) {

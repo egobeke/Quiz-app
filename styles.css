@@ -21,9 +21,9 @@ body{
 
 
 .quiz-container {
-    width: 90%;
+    width: 100%;
     max-width: 500px;
-    height: 500px;   
+    height: 600px;   
     background-color: azure;
     border-radius: 25px;
     padding: 40px;
@@ -72,18 +72,18 @@ body{
 }
 
 #progress {
-    align-self: flex-start;
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 700;
     color: #333;
-    margin-bottom: 10px;
+    position: absolute;
+    top: 150px;
 }
 
 #question {
     font-size: 24px;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 15px;
+    margin-top: 40px;
     color: #333;
 }
 
@@ -95,15 +95,14 @@ body{
     padding:8px 10px;
     width: 70%;
 }
-.button{
+.btn{
     background-color: #f8f9fa;
-    border: 2px none;
+    border: none;
     color: #000000;
-    padding: 12px;
-    width: 70%;
+    padding: 5px;
     font-size: 15px;
     border-radius: 5px;
-    text-align: left;
+    text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -115,11 +114,15 @@ body{
     margin-top: 30px;
 }
 
-.button-group {
+.button-group{
     display: flex;
-    justify-content:space-between;
+    margin-bottom:  20px;
+    margin-top: 30px;
+}
+
+.next-back{
     width: 100%;
-    margin-top: 20px;
+    display: flex;
 }
 
 #back-button, #next-button, #restart-button {
@@ -128,8 +131,22 @@ body{
     border: none;
     border-radius: 10px;
     font-size: 15px;
-    padding:4px 10px;
-    margin-bottom: 10px;
+    padding:10px 18px;
     align-self:center;
+}
+
+#restart-button{
+
+    position: relative;
+    right: 160px;
+    margin-top: 28px;
+}
+
+#total-questions{
+    margin-top: 10px;
+}
+
+#result-container{
+    margin-top: 10px;
 }
 

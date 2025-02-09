@@ -8,28 +8,31 @@
 </head>
 
 <body>
-    <div class="quiz-container" id="start-screen">
-        <h2 class="quiz-title">Quick Quiz</h2>
-        <p>Answer all questions !</p>
-        <button id="start-button">Start Quiz</button>
-    </div>
-    <div class="quiz-container" id="quiz" style="display: none;">
-        <div id="quiz-header">
-            <h2 id="question">Quiz Question</h2>
-            <ul id="answer-buttons" class="button-container"></ul>
-            <p id="progress">Question 1 of 5</p>
-            <p id="score">Score: 0</p>
-            <p id="total-questions">Total Questions: 5</p>
-        </div>
-        <div id="result-container" style="display: none;"></div>
-        <div class="button-grp">
-            <button id="next-button">Next</button>
-            <button id="back-button" style="display: none;">Back</button>
-            <button id="restart-button">Restart</button>
-        </div>   
-    </div>
+    <div>
 
-    <script src="script.js"></script>
-
+            <div class="quiz-container" id="start-screen">
+               <h2 class="quiz-title">Quick Quiz</h2>
+               <p>Answer all questions !</p>
+               <button id="start-button">Start Quiz</button>
+            </div>
+            <div class="quiz-container" id="quiz" style="display: none;">
+                <div id="quiz-header">
+                    <h2 id="question">Quiz Question</h2>
+                    <ul id="answer-buttons" class="button-container"></ul>
+                    <p id="progress">Question 1 of 5</p>
+                    <p id="score">Score: 0</p>
+                    <p id="total-questions">Total Questions: 5</p>
+                </div>
+              <div id="result-container" style="display: none;"></div> 
+                <div class="button-group">
+                    <div class="next-back">
+                     <button id="back-button" >Back</button>
+                     <button id="next-button">Next</button>
+                    </div>
+                <button id="restart-button">Restart</button> 
+              </div>
+            </div>
+       <script src="script.js"></script>
+    </div>
 </body>
 </html>
